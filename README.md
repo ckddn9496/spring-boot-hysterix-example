@@ -125,3 +125,5 @@ public class BookService {
 > Cloud Native Java (O'Reilly)
 
 이라는 값이 나온다. `bookstore`서비스가 동작하지 않기 때문에 `@HystrixCommand(fallbackMethod="reliable)`에 따라 BookService의 `reliable`함수가 동작한것을 알 수 있다.
+
+안전한 MSA서비스를 만들기 위해선 Circuit Breaker Pattern을 이용하여 결함에 강한 서비스를 구축할 수 있고 Netflix Hysterix를 사용함으로 이를 손쉽게 구현할 수 있다.
